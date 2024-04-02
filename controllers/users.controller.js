@@ -32,6 +32,7 @@ exports.login = (req, res) => {
               first_name: user.first_name,
               last_name: user.last_name,
               image_url: user.image_url,
+              email: user.email,
             });
           } else {
             res.status(401).json({ error: "Invalid credentials" });
